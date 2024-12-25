@@ -1,4 +1,5 @@
 import TopMovers from '../components/Market/TopMovers';
+import LongDatedOptions from '../components/Market/LongDatedOptions';
 import SummaryStats from '../components/Market/SummaryStats';
 
 function Home() {
@@ -16,6 +17,11 @@ function Home() {
       {/* Top Movers Section */}
       <div className="mb-8 overflow-hidden">
         <TopMovers />
+      </div>
+
+      {/* Long Dated Options Section */}
+      <div className="mb-8 overflow-hidden">
+        <LongDatedOptions />
       </div>
 
       {/* Summary Stats */}
