@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const optionsRouter = require('./routes/options');
+const screenerRouter = require('./routes/screener');
 
 const app = express();
 
@@ -13,5 +14,6 @@ app.use(cors({
 
 app.use(express.json());
 app.use('/api/options', optionsRouter);
+app.use('/api/screener', screenerRouter);
 
 // ... rest of your server setup ... 
